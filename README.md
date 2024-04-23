@@ -1,1 +1,1 @@
-"# Simple survey project" 
+# Simple survey project
