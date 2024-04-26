@@ -1,0 +1,44 @@
+{% extends "_base.html" %} {% load static %} {% block content %}
+<div class="container">
+  <h1>Dashboard</h1>
+  <div class="question">
+    <label>Q1:</label>
+    {% for answer in q1 %}
+    <div class="answer-item">
+        <label for="answer1">{{ answer.answer }}: </label>
+        <span id="answer1Count">{{ answer.count }}</span>
+    </div>
+    {% endfor %}
+  </div>
+  <br>
+  <div class="question">
+    <label>Q2:</label>
+    {% for answer in q2 %}
+    <div class="answer-item">
+        <label for="answer1">{{ answer.answer }}: </label>
+        <span id="answer1Count">{{ answer.count }}</span>
+    </div>
+    {% endfor %}
+  </div>
+  <br>
+  <div class="question">
+    <label>Q3:</label>
+    {% for answer in q3 %}
+    <div class="answer-item">
+        <label for="answer1">{{ answer.answer }}: </label>
+        <span id="answer1Count">{{ answer.count }}</span>
+    </div>
+    {% endfor %}
+  </div>
+  <br>
+  <div class="question">
+    <label>Q4:</label>
+    {% for answer in q4 %}
+    <div class="answer-item">
+        <label for="answer1">{{ answer.answer }}: </label>
+        <span id="answer1Count">{{ answer.count }}</span>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock content %}
