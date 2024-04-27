@@ -1,0 +1,18 @@
+{
+    "builds": [
+        {
+            "src": "simple_survey/wsgi.py",
+            "use": "@vercel/python",
+            "config": {
+                "maxLambdaSize": "15mb",
+                "runtime": "python12.3"
+            }
+        }
+    ],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "simple_survey/wsgi.py"
+        }
+    ]
+}
